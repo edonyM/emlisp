@@ -19,3 +19,10 @@
 (apply #'cons '(b (a c d)))
 ;7
 (funcall #'cons 'b '(a c d))
+;8
+(defun largerthan (a b)
+  (if (> a b) (format t "~A~%" a)
+    (format t "~A~%" b)))
+;9
+(defun fourthone (x)
+  (car (cdr (cdr (cdr x)))))
